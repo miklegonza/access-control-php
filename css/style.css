@@ -1,0 +1,179 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 22px;
+    color: white;
+}
+
+body {
+    background-color: rgb(34, 36, 38);
+}
+
+/* index */
+.positioner {
+    height: 100%;
+    width: 100%;
+    padding: 15%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.form-container {
+    display: block;
+    background-color: rgb(58, 156, 255);
+    width: 480px;
+    padding: 25px 40px;
+    border-radius: 12px;
+}
+
+.form-container h1 {
+    text-align: center;
+    margin: 15px;
+    font-size: 2em;
+    color: rgb(24, 24, 31);
+}
+
+.data {
+    color: rgb(34, 36, 38);
+    font-size: .7em;
+    padding: 12px 12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    width: 100%;
+    outline: none;
+    border: 0;
+}
+
+.btn-data {
+    display: block;
+    background-color: rgb(24, 24, 31);
+    border: 0;
+    border-radius: 12px;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 15px 40px;
+    font-weight: bold;
+    font-size: .8em;
+    text-align: center;
+    transition: all .3s ease-in;
+}
+
+.btn-data:hover {
+    background-color: green;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* index admon */
+.tables-container {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    width: 100%;
+    background-color: rgb(58, 156, 255);
+    overflow: hidden;
+}
+
+.nav-bar li {
+    display: block;
+    float: left;
+    padding: 14px;
+    transition: all .2s ease-in;
+}
+
+.nav-bar li:hover {
+    cursor: pointer;
+    background-color: rgb(148, 202, 255);
+}
+
+.welcome {
+    display: block;
+    width: 100%;
+    padding-right: 20px;
+    text-align: right;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.welcome p, .logout-link, .author, .author a {
+    display: inline;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.author {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.logout-link, .author a {
+    color: lightgreen;
+}
+
+.logout-link:hover, .author a:hover {
+    color: lightcoral;
+}
+
+.card {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: rgb(107, 177, 247);
+    transition: all .3s ease-in;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* index user */
+.title h1 {
+    background-color: rgb(58, 156, 255);
+    padding: 30px;
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: rgb(24, 24, 31);
+}
+
+.tbl-client {
+    display: block;
+    align-items: center;
+}
+
+.tbl-client table {
+    border: solid 4px rgb(34, 36, 38);
+    border-collapse: collapse;
+    margin: auto auto;
+}
+
+.tbl-client th, .tbl-client td {
+    text-align: left;
+    width: 300px;
+    height: 50px;
+    padding: 0 10px;
+    border: solid 4px rgb(34, 36, 38);
+}
+
+.tbl-client th {
+    background-color: rgb(58, 156, 255);
+}
+
+.tbl-client td {
+    background-color: lightgray;
+    color: black;
+}
