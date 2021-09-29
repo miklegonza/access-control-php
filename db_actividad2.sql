@@ -1,8 +1,9 @@
+-- DROP SCHEMA control_acceso_db; 
 CREATE SCHEMA control_acceso_db;
 USE control_acceso_db;
 
-DROP TABLE control_acceso_db.tbl_user;
-CREATE TABLE control_acceso_db.tbl_user (
+DROP TABLE control_acceso_db.users;
+CREATE TABLE control_acceso_db.users (
     id_user INT NOT NULL AUTO_INCREMENT,
     firstname VARCHAR(45) NOT NULL,
     lastname VARCHAR(45) NOT NULL,
@@ -13,7 +14,7 @@ CREATE TABLE control_acceso_db.tbl_user (
     UNIQUE INDEX user_UNIQUE (username)
 );
 
-INSERT INTO control_acceso_db.tbl_user(firstname, lastname, username, pwd, user_profile)
+INSERT INTO control_acceso_db.users(firstname, lastname, username, pwd, user_profile)
 VALUES ('Michael', 'Gonzalez', 'mikle', 'miklePWD', 1);
-INSERT INTO control_acceso_db.tbl_user(firstname, lastname, username, pwd, user_profile)
-VALUES ('Rober', 'Mart', 'Alexma', 'alexPWD', 2);
+INSERT INTO control_acceso_db.users(firstname, lastname, username, pwd, user_profile)
+VALUES ('Rober', 'Mart', 'alex', 'alexPWD', 2);
