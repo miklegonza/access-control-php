@@ -3,17 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Admin</title>
 </head>
 
 <body>
     <?php
-    include_once('./php/get_username.php')
+    include_once('../logic/get-username.php')
     ?>
 
     <div class="tables-container">
-        <nav class="nav-bar">
+        <nav class="nav-bar-horizontal">
             <ul>
                 <li>Item1</li>
                 <li>Item1</li>
@@ -25,7 +25,7 @@
             <p>Bienvenido </p>
             <p><?php echo $complete_name; ?>. </p>
             <p class="logout">
-                <a href="./php/logout.php" class="logout-link">Cerrar sesión</a>
+                <a href="../logic/logout.php" class="logout-link">Cerrar sesión</a>
             </p>
         </div>
         <div class="cards">

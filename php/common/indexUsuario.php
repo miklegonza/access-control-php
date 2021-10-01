@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
     <title>Usuario</title>
 </head>
 
 <body>
     <?php
-    include_once('./php/get_username.php')
+    include_once('../logic/get-username.php')
     ?>
 
     <div class="tables-container">
@@ -20,7 +20,7 @@
             <p>Bienvenido </p>
             <p><?php echo $complete_name; ?>. </p>
             <p class="logout">
-                <a href="./php/logout.php" class="logout-link">Cerrar sesión</a>
+                <a href="../logic/logout.php" class="logout-link">Cerrar sesión</a>
             </p>
         </div>
         <div class="tbl-client">

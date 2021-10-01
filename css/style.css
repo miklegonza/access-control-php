@@ -73,7 +73,7 @@ body {
     text-align: center;
 }
 
-.nav-bar ul {
+.nav-bar-horizontal ul {
     list-style-type: none;
     margin: 0;
     margin-bottom: 15px;
@@ -83,14 +83,14 @@ body {
     overflow: hidden;
 }
 
-.nav-bar li {
+.nav-bar-horizontal li {
     display: block;
     float: left;
     padding: 14px;
     transition: all .2s ease-in;
 }
 
-.nav-bar li:hover {
+.nav-bar-horizontal li:hover, .nav-bar-vertical li:hover {
     cursor: pointer;
     background-color: rgb(148, 202, 255);
 }
@@ -98,7 +98,7 @@ body {
 .welcome {
     display: block;
     width: 100%;
-    padding-right: 20px;
+    padding: 20px;
     text-align: right;
     margin-bottom: 15px;
     overflow: hidden;

@@ -12,7 +12,7 @@
         <div class="all">
             <div class="form-container">
                 <h1>Login</h1>
-                <form action="./php/validate.php" method="POST" name="login">
+                <form action="./php/logic/validate.php" method="POST" name="login">
                     <label for="username">username</label>
                     <input class="data" type="text" name="username" required>
                     <br>
